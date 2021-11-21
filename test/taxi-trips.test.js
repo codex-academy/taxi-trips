@@ -35,6 +35,8 @@ describe('Taxi Trips', function () {
     it('should find all the taxis for a region', async function () {
         const taxiTrips = TaxiTrips(pool);
 
+        assert.deepStrictEqual([], taxiTrips.findTaxisForRegion('Durban'));
+        assert.deepStrictEqual([], taxiTrips.findTaxisForRegion('Cape Town'));
         assert.deepStrictEqual([], taxiTrips.findTaxisForRegion('Gauteng'));
 
     })
@@ -44,6 +46,7 @@ describe('Taxi Trips', function () {
         const taxiTrips = TaxiTrips(pool);
         
         assert.deepStrictEqual([], taxiTrips.findTripsByRegNumber('...'));
+        assert.deepStrictEqual([], taxiTrips.findTripsByRegNumber('***'));
 
     });
 
@@ -51,31 +54,35 @@ describe('Taxi Trips', function () {
 
         const taxiTrips = TaxiTrips(pool);
 
-        assert.deepStrictEqual([], taxiTrips.findTripsByRegion('...').length);
+        assert.deepStrictEqual([], taxiTrips.findTripsByRegion('Cape Town').length);
+        assert.deepStrictEqual([], taxiTrips.findTripsByRegion('Gauteng').length);
+        assert.deepStrictEqual([], taxiTrips.findTripsByRegion('Gauteng').length);
 
     });
 
     it('find the total income for a given reg number', async function () {
 
         const taxiTrips = TaxiTrips(pool);
-        assert.deepStrictEqual([], taxiTrips.findIncomeByRegNumber('...').length);
+        assert.deepStrictEqual(0, taxiTrips.findIncomeByRegNumber('...').length);
+        assert.deepStrictEqual(0, taxiTrips.findIncomeByRegNumber('***').length);
 
     });
 
     it('find the total income for each taxi', async function () {
 
         const taxiTrips = TaxiTrips(pool);
-        assert.deepStrictEqual([], taxiTrips.findTotalIncomePerTaxi('..'));
+        assert.deepStrictEqual([{}, {}, {}], taxiTrips.findTotalIncomePerTaxi());
 
     });
 
     it('find the total income for all the taxis', async function () {
         const taxiTrips = TaxiTrips(pool);
-        assert.deepStrictEqual([], taxiTrips.findTotalIncome());
+        assert.deepStrictEqual(0.00, taxiTrips.findTotalIncome());
     });
 
 
     after(function () {
         pool.end();
-    })
+    });
+
 });
