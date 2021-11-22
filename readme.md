@@ -34,8 +34,8 @@ Function name            | Description
 `findTripsByRegNumber` 	 |  Find all the trips made by a given taxi - use reg number as look up
 `findTripsByRegion` 	     |  Find all the trips made for a given region - use the region name as lookup
 `findIncomeByRegNumber`    |   The total income for a taxi - use reg number in this query
-`findTotalIncomePerTaxi`   |  find the total income for all taxis
-`findTotalIncome` 		 | Find the total amount received in income for all the taxis
+`findTotalIncomePerTaxi`   |  find the total income for each of the taxis (a total for each taxi)
+`findTotalIncome` 		 | Find the total amount received in income from all the taxis (one amount)
 `findTotalIncomeByRegion`  | Find the total amount income for each of the regions
 	
 The methods should use SQL to do the calculations.
