@@ -30,7 +30,7 @@ Function name            | Description
 ------------------------ | ---------------
 `totalTripCount` 		 | return the total number of trips made               
 `findAllRegions` 		     |  find all the regions              
-`findTaxisForRegion` 	     |  find all the taxis for a given region
+`findTaxisForRegion` 	     |  find all the taxis for a given region - use region name as look up
 `findTripsByRegNumber` 	 |  Find all the trips made by a given taxi - use reg number as look up
 `findTripsByRegion` 	     |  Find all the trips made for a given region - use the region name as lookup
 `findIncomeByRegNumber`    |  List the income for each taxi - use reg number in this query
