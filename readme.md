@@ -10,11 +10,19 @@ Taxi's from different regions are doing various trips. Each trip has a cost and 
 	* can do many trips on a given route.
 * Each taxi belongs to a Region - there are three regions currently Gauteng, Cape Town & Durban.
 
-Note: tables are linked with foreign keys.
+**Note:** tables are linked with foreign keys.
 
-Create 4 tables: a Route, Taxi, Trip & Region table. 
+Create 4 tables: 
+
+* a Route, 
+* Taxi, 
+* Trip 
+* & Region table. 
+
 The trip table brings routes and taxi’s together.
 Each taxi is linked to 1 region. Many taxis can be linked to the same region.
+
+## Factory Function
 
 Create a Factory Function called `TaxiTrips` with the following methods:
 
@@ -33,16 +41,18 @@ The methods should use SQL to do the calculations.
 
 We made a start for you by creating the `taxi-trips.js` file with some tests in `taxi-trips.test.js`.
 
-Make all the tests pass in `taxi-trips.test.js` select the appropriate parameters and return data.
+Make all the tests pass with, your data in the database, in `taxi-trips.test.js` use the appropriate parameters and return data. The tests are not setup using specific data. You need to make sure each test tests the appropriate things.
 
 ## Database setup
 
 In the `sql` folder create two files.
 
-* Create the tables using a sql script file called `sql/tables.sql`,
-* Add data to the files using a file called `sql/data.sql`.
+* Create the tables using a sql script file called `tables.sql`,
+* Add data to the tables using a file called `data.sql`.
 
 Ensure each region have 3 taxi's and that each taxi have made between 3 to 5 trips.
+
+Ensure that the taxi registration numbers are appropriate for the region they are operating in.
 
 Here are some example routes:
 
@@ -74,7 +84,7 @@ Fork and clone this repository.
 
 # Please
 
-* Do your own work - we will see if you are copying code,
-* ask mentors if you need clarification - email them `mentors@projectcodex.co`,
-* enjoy it.
+* Do your own work - we will see if you are copying code.
+* Ask mentors if you need clarification - email them `mentors@projectcodex.co`.
+* Enjoy it!
 
