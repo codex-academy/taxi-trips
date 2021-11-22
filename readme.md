@@ -77,6 +77,14 @@ Here are some example routes:
 
 You can find more information on Taxi routes at [taximap](http://taximap.co.za/).
 
+## Planning
+
+* Do planning in Kanbanflow for 30 minutes - share your Kanbanflow link to us.
+* Do a Problem Solving Template (PST) and share it.
+
+Send an email with a subject of `My planning` to `mentors@projectcodex.co` this should includes link to your planning on your KanbanFlow board and your PST.
+
+
 ## Travis
 
 Ensure to deploy to Travis. Add a travis badge to the readme file.
