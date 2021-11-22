@@ -36,7 +36,7 @@ Function name            | Description
 `findIncomeByRegNumber`    |  List the income for each taxi - use reg number in this query
 `findTotalIncomePerTaxi`   |  find the total income per taxi
 `findTotalIncome` 		 | Find the total amount received in income for all the taxis
-`findTotalIncomeByRegion`  | Find the total amount income for all regions
+`findTotalIncomeByRegion`  | Find the total amount income for each of the regions
 	
 The methods should use SQL to do the calculations.
 
