@@ -14,10 +14,10 @@ Taxi's from different regions are doing various trips. Each trip has a cost and 
 
 Create 4 tables: 
 
-* a Route, 
+* Route, 
 * Taxi, 
 * Trip 
-* & Region table. 
+* Region table. 
 
 The trip table brings routes and taxi’s together.
 Each taxi is linked to 1 region. Many taxis can be linked to the same region.
